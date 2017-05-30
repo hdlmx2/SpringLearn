@@ -1,3 +1,5 @@
+import cn.hdlmx.bean.Car;
+
 import java.util.List;
 
 /**

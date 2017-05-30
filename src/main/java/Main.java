@@ -1,3 +1,4 @@
+import cn.hdlmx.bean.Car;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -6,8 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
-        Car car = (Car) ctx.getBean("car");
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+        Car car=(Car)ctx.getBean("car1");
+        System.out.println(car);
+        /*Car car = (Car) ctx.getBean("car");
         System.out.println(car);
         Car car2 = (Car) ctx.getBean("car2");
         System.out.println(car2);
@@ -19,7 +22,7 @@ public class Main {
         System.out.println(car3);
 
         Person2 person3=(Person2)ctx.getBean("person3");
-        System.out.println(person3);
+        System.out.println(person3);*/
 
     }
 }

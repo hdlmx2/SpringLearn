@@ -1,3 +1,5 @@
+package cn.hdlmx.bean;
+
 /**
  * Created by handong on 2017/5/25.
  */
@@ -14,6 +16,11 @@ public class Car {
         this.brand = brand;
         this.price = price;
         this.speed = speed;
+    }
+
+    public Car(String brand, double price) {
+        this.brand = brand;
+        this.price = price;
     }
 
     public String getBrand() {
@@ -42,7 +49,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "cn.hdlmx.bean.Car{" +
                 "brand='" + brand + '\'' +
                 ", price=" + price +
                 ", speed=" + speed +

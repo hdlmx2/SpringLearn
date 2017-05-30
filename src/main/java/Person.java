@@ -1,3 +1,5 @@
+import cn.hdlmx.bean.Car;
+
 /**
  * Created by handong on 2017/5/25.
  */
