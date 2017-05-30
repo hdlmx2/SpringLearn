@@ -2,9 +2,9 @@ package cn.hdlmx.annotation.repository;
 
 import org.springframework.stereotype.Repository;
 
-@Repository(value = "userRepository")
+@Repository
 public class UserRepositoryImp implements UserRepository {
     public void save() {
-        System.out.println("RepositoryImp save...");
+        System.out.println("UserRepositoryImp save...");
     }
 }
