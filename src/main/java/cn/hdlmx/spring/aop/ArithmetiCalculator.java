@@ -1,4 +1,4 @@
-package cn.hdlmx.spring.aop.impl;
+package cn.hdlmx.spring.aop;
 
 public interface ArithmetiCalculator {
     int add(int x, int y);
@@ -8,4 +8,5 @@ public interface ArithmetiCalculator {
     int mul(int x, int y);
 
     int div(int x, int y);
+
 }
