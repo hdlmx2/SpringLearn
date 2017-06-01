@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 
 public class ArithmetiCalculatorAspect {
-    @Before("execution(public int cn.hdlmx.spring.aop.impl.ArithmetiCalculatorImpl.*(int,int ))")
+    @Before("execution(public int cn.hdlmx.spring.aop.ArithmetiCalculator.add(int,int))")
     public void beforeMethod() {
         System.out.println("The method begins...");
     }

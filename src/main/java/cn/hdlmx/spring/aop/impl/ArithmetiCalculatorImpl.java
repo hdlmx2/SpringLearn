@@ -3,9 +3,8 @@ package cn.hdlmx.spring.aop.impl;
 import cn.hdlmx.spring.aop.ArithmetiCalculator;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "arithmetiCalculator")
 public class ArithmetiCalculatorImpl implements ArithmetiCalculator {
-    private int x;
 
     public int add(int x, int y) {
         return x + y;
