@@ -12,7 +12,7 @@ public class Main2 {
         NewPerson newPerson = (NewPerson) ctx.getBean("newPerson");
         System.out.println(newPerson);
 
-        DataSource dataSource= (DataSource) ctx.getBean("datasource");
+        DataSource dataSource = (DataSource) ctx.getBean("datasource");
         System.out.println(dataSource);
     }
 }

@@ -1,7 +1,9 @@
 package cn.hdlmx.spring.aop.impl;
 
 import cn.hdlmx.spring.aop.ArithmetiCalculator;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ArithmetiCalculatorImpl implements ArithmetiCalculator {
     private int x;
 
