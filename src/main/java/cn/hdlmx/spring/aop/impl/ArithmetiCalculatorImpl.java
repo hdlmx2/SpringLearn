@@ -23,4 +23,7 @@ public class ArithmetiCalculatorImpl implements ArithmetiCalculator {
 
         return x / y;
     }
+    public int test(){
+        return 0;
+    }
 }
