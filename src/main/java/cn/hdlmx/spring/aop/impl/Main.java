@@ -11,5 +11,8 @@ public class Main {
         int result=arithmetiCalculator.add(1,2);
         System.out.println("result:"+result);
 
+        result=arithmetiCalculator.sub(10,2);
+        System.out.println("result:"+result);
+
     }
 }
