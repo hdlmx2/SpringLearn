@@ -12,10 +12,8 @@
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
-        <mapping resource="cn/hdlmx/srpingWithHibernate/pojo/AccountEntity.hbm.xml"/>
-        <mapping class="cn.hdlmx.srpingWithHibernate.pojo.AccountEntity"/>
-        <mapping resource="cn/hdlmx/srpingWithHibernate/pojo/BookEntity.hbm.xml"/>
-        <mapping class="cn.hdlmx.srpingWithHibernate.pojo.BookEntity"/>
+        <mapping resource="cn/hdlmx/srpingWithHibernate/pojo/Account.hbm.xml"/>
+        <mapping resource="cn/hdlmx/srpingWithHibernate/pojo/Book.hbm.xml"/>
         <!-- <property name="connection.username"/> -->
         <!-- <property name="connection.password"/> -->
 

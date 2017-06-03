@@ -5,6 +5,10 @@ public class Account {
     private String name;
     private int balance;
 
+    public void setBalance(Integer balance) {
+        this.balance = balance;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -36,5 +40,27 @@ public class Account {
                 ", name='" + name + '\'' +
                 ", balance=" + balance +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Account account = (Account) o;
+
+        if (balance != account.balance) return false;
+        if (id != null ? !id.equals(account.id) : account.id != null) return false;
+        if (name != null ? !name.equals(account.name) : account.name != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        result = 31 * result + balance;
+        return result;
     }
 }
